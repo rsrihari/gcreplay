@@ -88,6 +88,9 @@
 		<div class="progress progress-info"><div class="bar" style="width: 40%">Nehru</div>&nbsp <span class="label label-info">Dramatics Cup</span>
 		</div>
 		
+			<!-- Button to trigger modal -->
+	<a href="#myModal" role="button" class="btn" data-toggle="modal">Comment</a>
+		
 	</div>
 
 	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
@@ -113,6 +116,10 @@
 		</div>
 		<div class="progress progress-danger"><div class="bar" style="width: 40%">RK</div>&nbsp <span class="label label-important">45</span>
 		</div>
+		
+			<!-- Button to trigger modal -->
+	<a href="#myModal" role="button" class="btn" data-toggle="modal">Comment</a>
+	
 	</div>
 
 	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
@@ -147,6 +154,9 @@
 		<div class="progress progress-info"><div class="bar" style="width: 40%">RK</div>&nbsp <span class="label label-info">Innovation Cup</span>
 		</div>
 		
+			<!-- Button to trigger modal -->
+	<a href="#myModal" role="button" class="btn" data-toggle="modal">Comment</a>
+		
 	</div>
 	
 	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
@@ -159,6 +169,36 @@
         </section>
 
 <hr/>
+
+	<!-- Modal -->
+	<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+	    <h3 id="myModalLabel">Join the discussion</h3>
+	  </div>
+	  <div class="modal-body">
+	    <div id="disqus_thread"></div> 
+	  </div>
+	  <div class="modal-footer">
+	    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+
+
+
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'gcreplay'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
         <!-- Custom scripts -->
         <script>
@@ -201,6 +241,8 @@
                         newElement.setAttribute('id', divId);
                         newElement.setAttribute('data-original-title', timePop);
                         newElement.setAttribute('data-content', textPop);
+                        newElement.setAttribute('data-toggle', 'popover');
+                        newElement.setAttribute('data-trigger', 'hover');
 
 			if (milestone == "gc") newElement.setAttribute('class', 'label label-success');
 			else if (milestone == "cup") newElement.setAttribute('class', 'label label-inverse');
