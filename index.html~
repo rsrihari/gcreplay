@@ -67,23 +67,33 @@
 	<h3>Social and Cultural General Championship</h3>
 	<div class="row">
 
-            <div class="span8" id='soc-cult-content'><hr/><h4 id="demo2" title="This is the navigation bar" data-html="true" data-placement="left" data-content="Click here to go to the relevant page. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(3);'>Next</a><hr/>">Timeline</h4></div>
+            <div class="span8" id='soc-cult-content'><hr/><h4 id="demo2" title="The Timeline view" data-html="true" data-placement="left" data-content="Click on each event date to see the standings and report on the Inter-hall event. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(3);'>Next</a><hr/>">Timeline</h4></div>
 
 	<div class="span4 standings">
-		<h4 id="demo3" title="This is the navigation bar" data-html="true" data-placement="left" data-content="Click here to go to the relevant page. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(4);'>Next</a><hr/>">Final Standings</h4>
+		<h4 id="demo3" title="GC Standings" data-html="true" data-placement="right" data-content="Pretty self-explanatory. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(4);'>Next</a><hr/>">Final Standings</h4>
 		<div class="progress progress-success"><div class="bar" style="width: 80%">RK</div>&nbsp <span class="label label-success">780</span>
 		</div>
 		<div class="progress progress-warning"><div class="bar" style="width: 65%">Azad</div>&nbsp <span class="label label-warning">550</span>
 		</div>
 		<div class="progress progress-danger"><div class="bar" style="width: 40%">Nehru</div>&nbsp <span class="label label-important">480</span>
 		</div>
+		
+	<h4>Category Cups</h4>
+		<div class="progress progress-success"><div class="bar" style="width: 40%">RK</div>&nbsp <span class="label label-success">Literary Cup</span>
+		</div>
+		<div class="progress progress-success"><div class="bar" style="width: 40%">RK</div>&nbsp <span class="label label-success">Fine Arts Cup</span>
+		</div>
+		<div class="progress progress-success"><div class="bar" style="width: 40%">RK</div>&nbsp <span class="label label-success">Entertainment Cup</span>
+		</div>
+		<div class="progress progress-success"><div class="bar" style="width: 40%">Nehru</div>&nbsp <span class="label label-success">Dramatics Cup</span>
+		</div>
+		
 	</div>
 
-	</div>
 	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
 	<hr/>
 
-<h4 id="demo4" title="This is the navigation bar" data-html="true" data-placement="left" data-content="Click here to go to the relevant page. <br/><a href='#header' role='button' class='pull-right btn btn-primary' onclick='demo(5);'>Next</a><hr/>">Hall ranking timeline</h4>
+<h4 id="demo4" title="Ranking progress chart" data-html="true" data-placement="left" data-content="You can track your hall's relative performance in the GC with our chart here. <br/><a href='#header' role='button' class='pull-right btn btn-primary' onclick='demo(5);'>Next</a><hr/>">Hall ranking timeline</h4>
 
     <div id="soc-cult-visualization" style="width: 500px; height: 400px;"></div>
 
@@ -92,20 +102,19 @@
         <section id="sports"><br/><br/>
 	<h3>Sports and Games General Championship</h3>
 	<div class="row">
-
-            <div class="span8" id='sports-content'><hr/></div>
+	
+            <div class="span8" id='sports-content'><hr/><h4>Timeline</h4></div>
 
 	<div class="span4 standings">
 		<h4>Final Standings</h4>
-		<div class="progress progress-success"><div class="bar" style="width: 80%">RK</div>&nbsp <span class="label label-success">780</span>
+		<div class="progress progress-success"><div class="bar" style="width: 80%">Patel</div>&nbsp <span class="label label-success">74</span>
 		</div>
-		<div class="progress progress-warning"><div class="bar" style="width: 65%">Azad</div>&nbsp <span class="label label-warning">550</span>
+		<div class="progress progress-warning"><div class="bar" style="width: 65%">Nehru</div>&nbsp <span class="label label-warning">68</span>
 		</div>
-		<div class="progress progress-danger"><div class="bar" style="width: 40%">Nehru</div>&nbsp <span class="label label-important">480</span>
+		<div class="progress progress-danger"><div class="bar" style="width: 40%">RK</div>&nbsp <span class="label label-important">45</span>
 		</div>
 	</div>
 
-	</div>
 	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
 	<hr/>
 
@@ -119,19 +128,27 @@
 	<h3>Technology General Championship</h3>
 	<div class="row">
 
-            <div class="span8" id='tech-content'><hr/></div>
+            <div class="span8" id='tech-content'><hr/><h4>Timeline</h4></div>
 
 	<div class="span4 standings">
 		<h4>Final Standings</h4>
-		<div class="progress progress-success"><div class="bar" style="width: 80%">RK</div>&nbsp <span class="label label-success">780</span>
+		<div class="progress progress-success"><div class="bar" style="width: 80%">Nehru</div>&nbsp <span class="label label-success">400</span>
 		</div>
-		<div class="progress progress-warning"><div class="bar" style="width: 65%">Azad</div>&nbsp <span class="label label-warning">550</span>
+		<div class="progress progress-warning"><div class="bar" style="width: 65%">LLR</div>&nbsp <span class="label label-warning">280</span>
 		</div>
-		<div class="progress progress-danger"><div class="bar" style="width: 40%">Nehru</div>&nbsp <span class="label label-important">480</span>
+		<div class="progress progress-danger"><div class="bar" style="width: 40%">RK</div>&nbsp <span class="label label-important">235</span>
 		</div>
+	
+	<h4>Category Cups</h4>
+		<div class="progress progress-success"><div class="bar" style="width: 40%">Nehru</div>&nbsp <span class="label label-success">Knowledge Cup</span>
+		</div>
+		<div class="progress progress-success"><div class="bar" style="width: 40%">LLR</div>&nbsp <span class="label label-success">Application Cup</span>
+		</div>
+		<div class="progress progress-success"><div class="bar" style="width: 40%">RK</div>&nbsp <span class="label label-success">Innovation Cup</span>
+		</div>
+		
 	</div>
-
-	</div>
+	
 	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
 	<hr/>
 
