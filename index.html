@@ -61,11 +61,13 @@
 	    </p>
         </div>
 
-        <section id="soc-cult">
+	<hr/>
+
+        <section id="soc-cult"><br/><br/>
 	<h3>Social and Cultural General Championship</h3>
 	<div class="row">
 
-            <div class="span8" id='soc-cult-content'><hr/></div>
+            <div class="span8" id='soc-cult-content'><hr/><h4>Timeline</h4></div>
 
 	<div class="span4 standings">
 		<h4>Final Standings</h4>
@@ -81,9 +83,13 @@
 	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
 	<hr/>
 
+<h4>Hall ranking timeline</h4>
+
+    <div id="soc-cult-visualization" style="width: 500px; height: 400px;"></div>
+
         </section>
 
-        <section id="sports">
+        <section id="sports"><br/><br/>
 	<h3>Sports and Games General Championship</h3>
 	<div class="row">
 
@@ -103,9 +109,13 @@
 	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
 	<hr/>
 
+<h4>Hall ranking timeline</h4>
+
+    <div id="sports-visualization" style="width: 500px; height: 400px;"></div>
+
         </section>
 
-        <section id="tech">	
+        <section id="tech"><br/><br/>
 	<h3>Technology General Championship</h3>
 	<div class="row">
 
@@ -124,6 +134,10 @@
 	</div>
 	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
 	<hr/>
+
+<h4>Hall ranking timeline</h4>
+
+    <div id="tech-visualization" style="width: 500px; height: 400px;"></div>
 
         </section>
 
@@ -146,6 +160,7 @@
                         var textPop = f.text;
                         var linkPop = f.link;
                         var timePop = f.time;
+			var milestone = f.milestone;
 			month = timePop.substring(3,' ');
 
                         var newElement = document.createElement('a');
@@ -158,7 +173,10 @@
                         newElement.setAttribute('id', divId);
                         newElement.setAttribute('data-original-title', timePop);
                         newElement.setAttribute('data-content', textPop);
-                        newElement.setAttribute('class', 'label label-info');
+console.log(milestone);
+			if (milestone == 2) newElement.setAttribute('class', 'label label-success');
+			else if (milestone == 1) newElement.setAttribute('class', 'label label-inverse');
+			else newElement.setAttribute('class', 'label label-info');
                         newElement.innerHTML = timePop;
 
 			if(gc == "soc-cult") var k = 0;
@@ -184,6 +202,42 @@
             });
 
         </script>
+
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+
+	<script>
+
+google.load('visualization', '1', {packages: ['corechart']});
+
+function drawVisualization() {
+        // Create and populate the data table.
+        var data = google.visualization.arrayToDataTable([
+          ['x', 'Patel', 'Nehru', 'RK', 'Azad', 'LLR', 'HJB', 'MMM', 'LBS', 'MS', 'RP', 'SN'],
+          ['Ad design',  1, 4, 2, 4, 3, 4, 4, 4, 4, 4, 4],
+          ['Product design', 1, 2, 3, 4, 5, 6, 6, 6, 6, 6, 6],
+          ['Case Study',  2, 1, 4, 5, 3, 6, 6, 6, 6, 6, 6],
+          ['Biz Quiz',  2, 1, 5, 4, 3, 7, 7, 7, 6, 7, 7],
+          ['Tech Quiz', 2, 1, 5, 3, 4, 8, 8, 8, 6, 6, 8],
+          ['Maths Olympiad',  3, 1, 5, 2, 4, 9, 9, 5, 7, 7, 9],
+          ['Chemical Innovation',  4, 1, 5, 3, 2, 10, 7, 6, 8, 8, 10],
+          ['OpenSoft', 5, 1, 4, 3, 2, 10, 7, 6, 8, 8, 10],
+          ['Hardware modelling', 5, 1, 3, 4, 2, 10, 8, 7, 9, 6, 10],
+        ]);
+      
+        // Create and draw the visualization.
+        new google.visualization.LineChart(document.getElementById('tech-visualization')).
+            draw(data, {curveType: "function",
+                        width: 800, height: 400,
+                        vAxis: {title: 'Rank', maxValue: 10, direction: -1, textPosition: 'none', gridlines: {color: '#EEE', count: 10}}, title: 'GC Timeline Rank', 
+                        hAxis: {title: 'GC Progress', textPosition: 'none', gridlines: {color: '#EEE', count: 10}}
+                       });
+      }
+      
+
+      google.setOnLoadCallback(drawVisualization);
+
+</script>
+
     </body>
 
 </html>
