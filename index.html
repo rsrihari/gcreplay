@@ -21,7 +21,7 @@
                 <div class="container">	<a class="brand" href="#">Home</a>
 
                     <ul class="nav affix">
-                        <li class="active"><a href="#soc-cult"><i class="icon-chevron-right"></i> Social and Cultural</a>
+                        <li class="active"><a id="demo1" title="This is the navigation bar" data-html="true" data-placement="bottom" data-content="Browse all the three GC's from here. <br/><a href='#soc-cult' role='button' class='pull-right btn btn-primary' onclick='demo(2);'>Next</a><hr/>" href="#soc-cult"><i class="icon-chevron-right"></i> Social and Cultural</a>
 
                         </li>
                         <li><a href="#sports"><i class="icon-chevron-right"></i> Sports</a>
@@ -35,7 +35,7 @@
             </div>
         </div>
 
-<div class="page-header">
+<div id="header" class="page-header">
   <h1>The Scholars' Avenue <small>Data Visualization</small></h1>
 </div>
 
@@ -43,9 +43,9 @@
              <h1>Gc-Replay</h1>
             <p>Relive the best moments of this years' General Championships</p>
             <p>
-	    <a href="#myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal">Get started</a> 
+	    <a id="myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal" onclick="demo(1);">Get started</a> 
 	    <!-- Modal -->
-	    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	    <div id="myModall" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-header">
 		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
 		    	<h3 id="myModalLabel">Description of how to use this webpage</h3>
@@ -67,10 +67,10 @@
 	<h3>Social and Cultural General Championship</h3>
 	<div class="row">
 
-            <div class="span8" id='soc-cult-content'><hr/><h4>Timeline</h4></div>
+            <div class="span8" id='soc-cult-content'><hr/><h4 id="demo2" title="The Timeline view" data-html="true" data-placement="left" data-content="Click on each event date to see the standings and report on the Inter-hall event. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(3);'>Next</a><hr/>">Timeline</h4></div>
 
 	<div class="span4 standings">
-		<h4>Final Standings</h4>
+		<h4 id="demo3" title="GC Standings" data-html="true" data-placement="right" data-content="Pretty self-explanatory. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(4);'>Next</a><hr/>">Final Standings</h4>
 		<div class="progress progress-success"><div class="bar" style="width: 80%">RK</div>&nbsp <span class="label label-success">780</span>
 		</div>
 		<div class="progress progress-warning"><div class="bar" style="width: 65%">Azad</div>&nbsp <span class="label label-warning">550</span>
@@ -83,7 +83,7 @@
 	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
 	<hr/>
 
-<h4>Hall ranking timeline</h4>
+<h4 id="demo4" title="Ranking progress chart" data-html="true" data-placement="left" data-content="You can track your hall's relative performance in the GC with our chart here. <br/><a href='#header' role='button' class='pull-right btn btn-primary' onclick='demo(5);'>Next</a><hr/>">Hall ranking timeline</h4>
 
     <div id="soc-cult-visualization" style="width: 500px; height: 400px;"></div>
 
@@ -145,6 +145,17 @@
 
         <!-- Custom scripts -->
         <script>
+        
+        function demo(num) {
+        	console.log('You clicked demo');
+        	if (num != 5) {
+	        	$('#demo' + num).popover('show');        		
+        	}
+        	if (num != 1) {
+        		$('#demo' + (num-1)).popover('destroy');
+        	}     	
+        }
+        
             $("a[data-toggle=tooltip]")
                 .tooltip();
             $("a[data-toggle=popover]")
