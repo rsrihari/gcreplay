@@ -173,10 +173,11 @@
                         newElement.setAttribute('id', divId);
                         newElement.setAttribute('data-original-title', timePop);
                         newElement.setAttribute('data-content', textPop);
-console.log(milestone);
-			if (milestone == 2) newElement.setAttribute('class', 'label label-success');
-			else if (milestone == 1) newElement.setAttribute('class', 'label label-inverse');
+
+			if (milestone == "gc") newElement.setAttribute('class', 'label label-success');
+			else if (milestone == "cup") newElement.setAttribute('class', 'label label-inverse');
 			else newElement.setAttribute('class', 'label label-info');
+
                         newElement.innerHTML = timePop;
 
 			if(gc == "soc-cult") var k = 0;
