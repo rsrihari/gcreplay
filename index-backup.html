@@ -48,14 +48,15 @@
 	    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-header">
 		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-		    	<h3 id="myModalLabel">Description of how to use this webpage</h3>
+		    	<h3 id="myModalLabel">Modal header</h3>
 
 		</div>
 		<div class="modal-body">
-		    <p>Instructions</p>
+		    <p>One fine body</p>
 		</div>
 		<div class="modal-footer">
 		    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+		    <button class="btn btn-primary">Save changes</button>
 		</div>
 	    </div>
 	    </p>
@@ -65,65 +66,34 @@
 	<h3>Social and Cultural General Championship</h3>
 	<div class="row">
 
-            <div class="span8" id='soc-cult-content'><hr/></div>
+            <div class="span8" id='soc-cult-content'></div>
 
 	<div class="span4 standings">
-		<h4>Final Standings</h4>
-		<div class="progress progress-success"><div class="bar" style="width: 80%">RK</div>&nbsp <span class="label label-success">780</span>
+		<h6>Standings</h6>
+		<div class="progress progress-success">
+		  <div class="bar" style="width: 40%"></div>
 		</div>
-		<div class="progress progress-warning"><div class="bar" style="width: 65%">Azad</div>&nbsp <span class="label label-warning">550</span>
+		<div class="progress progress-warning">
+		  <div class="bar" style="width: 40%"></div>
 		</div>
-		<div class="progress progress-danger"><div class="bar" style="width: 40%">Nehru</div>&nbsp <span class="label label-important">480</span>
+		<div class="progress progress-danger">
+		  <div class="bar" style="width: 40%"></div>
 		</div>
 	</div>
 
 	</div>
-	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
-	<hr/>
 
         </section>
 
         <section id="sports">
 	<h3>Sports and Games General Championship</h3>
-	<div class="row">
-
-            <div class="span8" id='sports-content'><hr/></div>
-
-	<div class="span4 standings">
-		<h4>Final Standings</h4>
-		<div class="progress progress-success"><div class="bar" style="width: 80%">RK</div>&nbsp <span class="label label-success">780</span>
-		</div>
-		<div class="progress progress-warning"><div class="bar" style="width: 65%">Azad</div>&nbsp <span class="label label-warning">550</span>
-		</div>
-		<div class="progress progress-danger"><div class="bar" style="width: 40%">Nehru</div>&nbsp <span class="label label-important">480</span>
-		</div>
-	</div>
-
-	</div>
-	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
-	<hr/>
+            <div id='sports-content'></div>
 
         </section>
 
         <section id="tech">	
 	<h3>Technology General Championship</h3>
-	<div class="row">
-
-            <div class="span8" id='tech-content'><hr/></div>
-
-	<div class="span4 standings">
-		<h4>Final Standings</h4>
-		<div class="progress progress-success"><div class="bar" style="width: 80%">RK</div>&nbsp <span class="label label-success">780</span>
-		</div>
-		<div class="progress progress-warning"><div class="bar" style="width: 65%">Azad</div>&nbsp <span class="label label-warning">550</span>
-		</div>
-		<div class="progress progress-danger"><div class="bar" style="width: 40%">Nehru</div>&nbsp <span class="label label-important">480</span>
-		</div>
-	</div>
-
-	</div>
-	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
-	<hr/>
+            <div id='tech-content'></div>
 
         </section>
 
@@ -136,8 +106,6 @@
             $("a[data-toggle=popover]")
                 .popover();
 
-	var month, refMonth = ["Sep", "Sep", "Sep"];
-
             $(function () {
                 $.getJSON('data/gc-data.json', function (data) {
                     $.each(data.events, function (i, f) {
@@ -146,35 +114,18 @@
                         var textPop = f.text;
                         var linkPop = f.link;
                         var timePop = f.time;
-			month = timePop.substring(3,' ');
 
                         var newElement = document.createElement('a');
-			var blankElement = document.createElement('span');
-			blankElement.innerHTML = "&nbsp";
-			var breakElement = document.createElement('span');
-			breakElement.innerHTML = "<br>";
 
                         var divId = 'data-' + i;
                         newElement.setAttribute('id', divId);
                         newElement.setAttribute('data-original-title', timePop);
                         newElement.setAttribute('data-content', textPop);
-                        newElement.setAttribute('class', 'label label-info');
-                        newElement.innerHTML = timePop;
+                        newElement.setAttribute('role', 'button');
+                        newElement.setAttribute('class', 'btn btn-info');
+                        newElement.innerHTML = "";
 
-			if(gc == "soc-cult") var k = 0;
-			else if(gc == "sports") var k = 1;
-			else var k = 2;
-
-			if(refMonth[k] == month) {
-			region.appendChild(newElement);
-			region.appendChild(blankElement);
-			}
-			else {
-			refMonth[k] = month;
-			region.appendChild(breakElement);
-			region.appendChild(newElement);
-			region.appendChild(blankElement);			
-			}
+                        region.appendChild(newElement);
 
                         $('#' + divId)
                             .popover();

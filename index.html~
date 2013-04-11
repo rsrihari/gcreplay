@@ -9,18 +9,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap-popover.js"></script>
     <script src="js/bootstrap-tooltip.js"></script>
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
-
-		<script>
-			$(function() {
-				$.getJSON('data/gc-data.json', function(data) {
-					$.each(data.events, function(i,f) {
-							console.log('choot');
-					});
-				});
-			});
-		</script>
-		
   </head>
   
   <body class="container" data-spy="scroll" data-container=".navbar">
@@ -83,7 +71,7 @@
 			
 			<a href="#" id="soc">that link</a>
 			
-			<div id='sexy'></div>
+			<div id='content'></div>
 		</section>
 		
 		<!-- Custom scripts -->
@@ -115,6 +103,36 @@
 			 },
 		]
 	};
+	
+		$(function() {
+			$.getJSON('data/gc-data.json', function(data) {
+				$.each(data.events, function(i,f) {
+						console.log('Done');
+						var region = document.getElementById('content');
+						var textPop = JSONObject.events[i].text;
+						var linkPop = JSONObject.events[i].link;
+						var timePop = JSONObject.events[i].time;
+
+						var newElement = document.createElement('a');
+						var newLink = document.createElement('a');
+						
+						newLink.innerHTML = timePop;
+						newLink.setAttribute('href', linkPop);
+						
+						var divId = 'data-'+i;
+						newElement.setAttribute('id', divId);
+						newElement.setAttribute('data-original-title', newLink);
+						newElement.setAttribute('data-content', textPop);		
+						//newElement.setAttribute('href', linkPop);				
+						newElement.innerHTML = "Event";
+
+						region.appendChild(newElement);
+
+						$('#'+divId).popover();
+					
+				});
+			});
+		});
 	
 	for (var i=0; i<JSONObject.events.length; i++) {
 	console.log('choot');
