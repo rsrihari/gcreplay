@@ -43,21 +43,7 @@
              <h1>Gc-Replay</h1>
             <p>Relive the best moments of this years' General Championships</p>
             <p>
-	    <a id="myModal" role="button" class="btn btn-primary btn-large" data-toggle="modal" onclick="demo(1);">Get started</a> 
-	    <!-- Modal -->
-	    <div id="myModall" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-header">
-		    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-		    	<h3 id="myModalLabel">Description of how to use this webpage</h3>
-
-		</div>
-		<div class="modal-body">
-		    <p>Instructions</p>
-		</div>
-		<div class="modal-footer">
-		    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-		</div>
-	    </div>
+	    <a id="demo" role="button" class="btn btn-primary btn-large" data-toggle="modal" onclick="demo(1);">Get started</a> 
 	    </p>
         </div>
 
@@ -153,6 +139,9 @@
 		</div>
 		<div class="progress progress-info"><div class="bar" style="width: 40%">RK</div>&nbsp <span class="label label-info">Innovation Cup</span>
 		</div>
+		
+			<!-- Button to trigger modal -->
+	<a href="#myModal" role="button" class="btn" data-toggle="modal">Comment</a>
 		
 	</div>
 	
