@@ -89,7 +89,7 @@ $(function() {
             newElement.innerHTML = namePop;
 
             newWrapper.appendChild(newElement);
-            region.appendChild(newWrapper);
+            region = appendChild(newWrapper);
 
             $('#' + divId).click(function() {
                 $('#' + gc + '-albums').fbAlbum({
