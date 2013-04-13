@@ -79,7 +79,6 @@ $(function() {
         $.each(data.albums, function(i, f) {
             var gc = f.gc;
             var region = document.getElementById(gc + '-albums');
-            console.log(region);
             var namePop = f.name;
             var newElement = document.createElement('a');
             var newWrapper = document.createElement('p');
