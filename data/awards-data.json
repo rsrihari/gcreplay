@@ -1,0 +1,354 @@
+{
+    "awards": [
+        {
+            "name": "Kaustubh Khare",
+            "gc": "soc-cult",
+            "award": "Chandramani Cup"
+        },
+        {
+            "name": "Kaushik Shivaramakrishnan",
+            "gc": "soc-cult",
+            "award": "Alumni Cup"
+        },
+        {
+            "name": "Shivank Sharma",
+            "gc": "soc-cult",
+            "award": "Order of Merit, Dramatics"
+        },
+        {
+            "name": "Deepanshu Pathak",
+            "gc": "soc-cult",
+            "award": "Order of Merit, Dramatics"
+        },
+        {
+            "name": "Annirudh Pairiwala",
+            "gc": "soc-cult",
+            "award": "Order of Merit, Dramatics"
+        },
+        {
+            "name": "Dhruv Verma",
+            "gc": "soc-cult",
+            "award": "Order of Merit, Entertainment"
+        },
+        {
+            "name": "Sandipan Dutaa",
+            "gc": "soc-cult",
+            "award": "Order of Merit, Fine Arts"
+        },
+        {
+            "name": "Srinivasa Aditya P.",
+            "gc": "soc-cult",
+            "award": "Order of Merit, Fine Arts"
+        },
+        {
+            "name": "Kaustubh Khare",
+            "gc": "soc-cult",
+            "award": "Order of Merit, Literary"
+        },
+        {
+            "name": "Aaron Mendonca",
+            "gc": "soc-cult",
+            "award": "Order of Merit, Literary"
+        },
+        {
+            "name": "Srinjoy Chattopadhyay",
+            "gc": "soc-cult",
+            "award": "Honorable Mention, Dramatics"
+        },
+        {
+            "name": "Aaron Mendonca",
+            "gc": "soc-cult",
+            "award": "Honorable Mention, Dramatics"
+        },
+        {
+            "name": "Anirban Gupta",
+            "gc": "soc-cult",
+            "award": "Honorable Mention, Entertainment"
+        },
+        {
+            "name": "Chanakya Hridaya",
+            "gc": "soc-cult",
+            "award": "Honourable Mention, Literary"
+        },
+        {
+            "name": "Akansha Shrivastav",
+            "gc": "soc-cult",
+            "award": "Special Mention, Dramatics"
+        },
+        {
+            "name": "Prakhar Verma",
+            "gc": "soc-cult",
+            "award": "Special Mention, Dramatics"
+        },
+        {
+            "name": "Achilles EA Saxby",
+            "gc": "soc-cult",
+            "award": "Special Mention, Dramatics"
+        },
+        {
+            "name": "Sappa Divija",
+            "gc": "soc-cult",
+            "award": "Special Mention, Fine Arts"
+        },
+        {
+            "name": "Avik Dey",
+            "gc": "soc-cult",
+            "award": "Special Mention, Fine Arts"
+        },
+        {
+            "name": "Darshan Varier",
+            "gc": "sports",
+            "award": "Bhandarkar Cup"
+        },
+        {
+            "name": "Shreyas Mahajan",
+            "gc": "sports",
+            "award": "Alumni Cup"
+        },
+        {
+            "name": "Anoop S.",
+            "gc": "sports",
+            "award": "Institute Blue, Aquatics"
+        },
+        {
+            "name": "Darshan Varier",
+            "gc": "sports",
+            "award": "Institute Blue, Aquatics"
+        },
+        {
+            "name": "Pahun Jain",
+            "gc": "sports",
+            "award": "Institute Blue, Aquatics"
+        },
+        {
+            "name": "Ranita Bej",
+            "gc": "sports",
+            "award": "Institute Blue, Aquatics"
+        },
+        {
+            "name": "Abhishek Raj",
+            "gc": "sports",
+            "award": "Institute Blue, Athletics"
+        },
+        {
+            "name": "Achilles EA Saxby",
+            "gc": "sports",
+            "award": "Institute Blue, Basketball"
+        },
+        {
+            "name": "Rukmoni Soren",
+            "gc": "sports",
+            "award": "Institute Blue, Basketball"
+        },
+        {
+            "name": "Hookothang Baite",
+            "gc": "sports",
+            "award": "Institute Blue, Football"
+        },
+        {
+            "name": "Abhishek Meena",
+            "gc": "sports",
+            "award": "Institute Blue, Voleyball"
+        },
+        {
+            "name": "Bhavnish Kohli",
+            "gc": "sports",
+            "award": "Institute Blue, Voleyball"
+        },
+        {
+            "name": "Kannoju Nandini",
+            "gc": "sports",
+            "award": "Institute Blue, Voleyball"
+        },
+        {
+            "name": "Sharvana Kumar",
+            "gc": "sports",
+            "award": "Institute Blue, Voleyball"
+        },
+        {
+            "name": "Anoop S.",
+            "gc": "sports",
+            "award": "Institute Blue, Water Polo"
+        },
+        {
+            "name": "Darshan Varier",
+            "gc": "sports",
+            "award": "Institute Blue, Water Polo"
+        },
+        {
+            "name": "Pahun Jain",
+            "gc": "sports",
+            "award": "Institute Blue, Water Polo"
+        },
+        {
+            "name": "Leela Krishna Ganga Raju",
+            "gc": "sports",
+            "award": "Honourable Mention, Athletics"
+        },
+        {
+            "name": "Asit Godbole",
+            "gc": "sports",
+            "award": "Honourable Mention, Badminton"
+        },
+        {
+            "name": "Kislaya Dubey",
+            "gc": "sports",
+            "award": "Honourable Mention, Badminton"
+        },
+        {
+            "name": "Raj Patel",
+            "gc": "sports",
+            "award": "Honourable Mention, Badminton"
+        },
+        {
+            "name": "Ankur Ambastha",
+            "gc": "sports",
+            "award": "Honourable Mention, Basketball"
+        },
+        {
+            "name": "Veda Gogineni",
+            "gc": "sports",
+            "award": "Honourable Mention, Basketball"
+        },
+        {
+            "name": "Kamal Singh",
+            "gc": "sports",
+            "award": "Honourable Mention, Cricket"
+        },
+        {
+            "name": "Rakesh Kumar Meena",
+            "gc": "sports",
+            "award": "Honourable Mention, Cricket"
+        },
+        {
+            "name": "Sruthi Chekuri",
+            "gc": "sports",
+            "award": "Honourable Mention, Cricket"
+        },
+        {
+            "name": "Harshvardhan Yadav",
+            "gc": "sports",
+            "award": "Honourable Mention, Football"
+        },
+        {
+            "name": "Rohit Singh",
+            "gc": "sports",
+            "award": "Honourable Mention, Football"
+        },
+        {
+            "name": "Ankur Jain",
+            "gc": "sports",
+            "award": "Honourable Mention, Hockey"
+        },
+        {
+            "name": "Sunil Kumar",
+            "gc": "sports",
+            "award": "Honourable Mention, Hockey"
+        },
+        {
+            "name": "Thirupathi Lumavath",
+            "gc": "sports",
+            "award": "Honourable Mention, Hockey"
+        },
+        {
+            "name": "Hrishikesh Paranjape",
+            "gc": "sports",
+            "award": "Honourable Mention, Table Tennis"
+        },
+        {
+            "name": "Shubhra Pasayat",
+            "gc": "sports",
+            "award": "Honourable Mention, Table Tennis"
+        },
+        {
+            "name": "Harshal Maniyar",
+            "gc": "sports",
+            "award": "Special Mention, Aquatics"
+        },
+        {
+            "name": "Bobbli Swetha",
+            "gc": "sports",
+            "award": "Special Mention, Athletics"
+        },
+        {
+            "name": "Abhishek",
+            "gc": "sports",
+            "award": "Special Mention, Hockey"
+        },
+        {
+            "name": "Harshal Maniyar",
+            "gc": "sports",
+            "award": "Special Mention, Water Polo"
+        },
+        {
+            "name": "Kumar Karthik",
+            "gc": "sports",
+            "award": "Special Mention, Water Polo"
+        },
+        {
+            "name": "Mithilesh Gurujala",
+            "gc": "tech",
+            "award": "GS Sanyal Cup"
+        },
+        {
+            "name": "Anuraag Gutgutia",
+            "gc": "tech",
+            "award": "Order of Merit"
+        },
+        {
+            "name": "Mithilesh Gurujala",
+            "gc": "tech",
+            "award": "Order of Merit"
+        },
+        {
+            "name": "Nikunj Bajaj",
+            "gc": "tech",
+            "award": "Order of Merit"
+        },
+        {
+            "name": "Aditya Date",
+            "gc": "tech",
+            "award": "Honourable Mention"
+        },
+        {
+            "name": "Ashish Kumar",
+            "gc": "tech",
+            "award": "Honourable Mention"
+        },
+        {
+            "name": "Gaurav Kumar Rathi",
+            "gc": "tech",
+            "award": "Honourable Mention"
+        },
+        {
+            "name": "Reeju Datta",
+            "gc": "tech",
+            "award": "Honourable Mention"
+        },
+        {
+            "name": "Saurav Sharan",
+            "gc": "tech",
+            "award": "Honourable Mention"
+        },
+        {
+            "name": "Sajal Jain",
+            "gc": "tech",
+            "award": "Special Mention"
+        },
+        {
+            "name": "Srijan Kumar",
+            "gc": "tech",
+            "award": "Special Mention"
+        },
+        {
+            "name": "Srinjoy Chattopadhyay",
+            "gc": "tech",
+            "award": "Special Mention"
+        },
+        {
+            "name": "Suvam Ray",
+            "gc": "tech",
+            "award": "Special Mention"
+        }
+    ]
+}

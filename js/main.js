@@ -1,6 +1,6 @@
 function demo(num) {
     console.log('You clicked demo');
-    if (num != 6) {
+    if (num != 5) {
         $('#demo' + num).popover('show');
     }
     if (num != 1) {
@@ -88,6 +88,7 @@ $(function() {
             newElement.setAttribute('href', '#' + gc);
             newElement.innerHTML = namePop;
 
+
             newWrapper.appendChild(newElement);
             region.appendChild(newWrapper);
 
@@ -98,6 +99,50 @@ $(function() {
                     'albumID': f.id
                 });
             });
+
+        });
+    });
+});
+
+var socNum = 0, spoNum = 0, tecNum = 0;
+var tempNum;
+
+$(function() {
+    $.getJSON('data/awards-data.json', function(data) {
+        $.each(data.awards, function(i, f) {
+            var gc = f.gc;
+            var region = document.getElementById(gc + '-awards');
+            var namePop = f.name;
+            var awardPop = f.award;
+            var newElement = document.createElement('blockquote');
+            var newPara = document.createElement('p');
+            var newWrapper = document.createElement('small');
+
+            newPara.innerHTML = namePop;
+            newWrapper.innerHTML = awardPop;
+
+            newElement.appendChild(newPara);
+            newElement.appendChild(newWrapper);
+
+            if (gc == 'soc-cult') {
+                socNum++;
+                tempNum = socNum;
+            }
+            else if (gc == 'sports') {
+                spoNum++;
+                tempNum = spoNum;
+            }
+            else {
+                tecNum++;
+                tempNum = tecNum;
+            }
+
+            if (tempNum % 2 == 0) {
+                newElement.setAttribute('class', 'pull-right');
+            }
+
+            region.appendChild(newElement);
+
         });
     });
 });
