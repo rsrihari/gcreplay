@@ -57,10 +57,10 @@
                     Events data
                 </li>
                 <li class="active">
-                    <a href="#soc-cult-tab1" data-toggle="tab">Events timeline</a>
+                    <a href="#soc-cult-tab1" id="demo2" title="The Timeline view" data-html="true" data-placement="left" data-content="Click on each event date to see the standings and report on the Inter-hall event. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(3);'>Next</a><hr/>" data-toggle="tab">Events timeline</a>
                 </li>
                 <li>
-                    <a href="#soc-cult-tab2" data-toggle="tab">GC Progress tracker</a>
+                    <a href="#soc-cult-tab2" id="demo5" title="Ranking progress chart" data-html="true" data-placement="left" data-content="You can track your hall's relative performance in the GC with our chart here. <br/><a href='#header' role='button' class='pull-right btn btn-primary' onclick='demo(6);'>Next</a><hr/>" data-toggle="tab">GC Progress tracker</a>
                 </li>
                 <li>
                     <a href="#soc-cult-tab5" data-toggle="tab">Picture gallery</a>
@@ -76,14 +76,14 @@
                 </li>
                 <li>
                     <!-- Button to trigger modal -->
-                    <a href="#myModal" role="button" class="btn" data-toggle="modal">Comment</a>
+                    <a href="#myModal" id="demo4" title="Join the discussion" data-html="true" data-placement="left" data-content="Share your views on the GC. Tell us something about your contribution. Be social. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(5);'>Next</a><hr/>" role="button" class="btn" data-toggle="modal">Comment</a>
                 </li>
             </ul>
 
             <div class="tab-content">
                 <div class="tab-pane active" style="height: 400px; overflow: auto;" id="soc-cult-tab1">
                     <div class="" id='soc-cult-content'>
-                        <h4 id="demo2" title="The Timeline view" data-html="true" data-placement="left" data-content="Click on each event date to see the standings and report on the Inter-hall event. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(3);'>Next</a><hr/>">Timeline</h4>
+                        <h4>Timeline</h4>
                     </div>
 
                     <hr/>
@@ -92,7 +92,7 @@
 
                 </div>
                 <div class="tab-pane" style="height: 400px; overflow: auto;" id="soc-cult-tab2">
-                    <h4 id="demo4" title="Ranking progress chart" data-html="true" data-placement="left" data-content="You can track your hall's relative performance in the GC with our chart here. <br/><a href='#header' role='button' class='pull-right btn btn-primary' onclick='demo(5);'>Next</a><hr/>">Hall ranking timeline</h4>
+                    <h4>Hall ranking timeline</h4>
 
                     <div id="soc-cult-visualization"></div>
 
@@ -179,7 +179,7 @@
         <div class="row">
 
             <div class="span5 standings">
-                <h4 id="demo3" title="GC Standings" data-html="true" data-placement="right" data-content="Pretty self-explanatory. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(4);'>Next</a><hr/>">Final Standings</h4>
+                <h4 id="demo3" title="GC Standings" data-html="true" data-placement="right" data-content="Pretty self-explanatory. Also check out the cups won by the halls. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(4);'>Next</a><hr/>">Final Standings</h4>
                 <div id="soc-cult-gauge"></div>
             </div>
             <div class="span7 standings">

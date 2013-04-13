@@ -1,6 +1,6 @@
 function demo(num) {
     console.log('You clicked demo');
-    if (num != 5) {
+    if (num != 6) {
         $('#demo' + num).popover('show');
     }
     if (num != 1) {
