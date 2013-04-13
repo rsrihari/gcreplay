@@ -73,3 +73,31 @@ $(function() {
         });
     });
 });
+
+$(function() {
+    $.getJSON('data/album-data.json', function(data) {
+        $.each(data.albums, function(i, f) {
+            var gc = f.gc;
+            var region = document.getElementById(gc + '-albums');
+            console.log(region);
+            var namePop = f.name;
+            var newElement = document.createElement('a');
+            var newWrapper = document.createElement('p');
+
+            var divId = 'album-' + i;
+            newElement.setAttribute('id', divId);
+            newElement.innerHTML = namePop;
+
+            newWrapper.appendChild(newElement);
+            region = appendChild(newWrapper);
+
+            $('#' + divId).click(function() {
+                $('#' + gc + '-albums').fbAlbum({
+                    'albumID': f.id
+                });
+            });
+
+        });
+    });
+});
+
