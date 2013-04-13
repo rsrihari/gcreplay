@@ -1,7 +1,7 @@
 (function($) {
     $.fn.fbAlbum = function(f) {
         var g = this;
-        var h = {'limit': 100, 'ulClass': 'thumbnails', 'callback': '', 'title': true};
+        var h = {'limit': 100, 'divClass': '', 'callback': '', 'title': true};
         if (f) {
             $.extend(h, f)
         }
@@ -16,13 +16,14 @@
                         if (h.title && val2.name) {
                             e = val2.name
                         }
-                        b.push('<li><a href = "' + val2.source + '" class="thumbnail"><img src="' + val2.picture + '"></a></li>')
+                        console.log('ajay');
+                        b.push('<div class="span2 thumbnail" style="height: 100px;"><a href = "' + val2.source + '"><center><img style="height: 100px;" src="' + val2.picture + '"></a></center></div>')
 
                     }
                 }
             }
             ;
-            $('<ul />', {'class': h.ulClass, html: b.join('')}).appendTo(g);
+            $('<div />', {'class': h.divClass, html: b.join('')}).appendTo(g);
             if (h.callback) {
                 h.callback()
             }

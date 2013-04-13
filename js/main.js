@@ -85,17 +85,19 @@ $(function() {
 
             var divId = 'album-' + i;
             newElement.setAttribute('id', divId);
+            newElement.setAttribute('href', '#' + gc);
             newElement.innerHTML = namePop;
 
             newWrapper.appendChild(newElement);
             region.appendChild(newWrapper);
 
             $('#' + divId).click(function() {
-                $('#' + gc + '-albums').fbAlbum({
+                var region = document.getElementById(gc + '-albums-slot');
+                region.innerHTML = '';
+                $('#' + gc + '-albums-slot').fbAlbum({
                     'albumID': f.id
                 });
             });
-
         });
     });
 });
