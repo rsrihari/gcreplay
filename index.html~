@@ -14,14 +14,14 @@
 
     </head>
     
-    <body class="container" data-spy="scroll" data-container=".navbar">
+    <body class="container">
 
         <div class="navbar navbar-fixed-top navbar-inverse">
             <div class="navbar-inner">
                 <div class="container">	<a class="brand" href="#">Home</a>
 
-                    <ul class="nav affix">
-                        <li class="active"><a id="demo1" title="This is the navigation bar" data-html="true" data-placement="bottom" data-content="Browse all the three GC's from here. <br/><a href='#soc-cult' role='button' class='pull-right btn btn-primary' onclick='demo(2);'>Next</a><hr/>" href="#soc-cult"><i class="icon-chevron-right"></i> Social and Cultural</a>
+                    <ul class="nav">
+                        <li><a href="#soc-cult" id="demo1" title="This is the navigation bar" data-html="true" data-placement="bottom" data-content="Browse all the three GC's from here. <br/><a href='#soc-cult' role='button' class='pull-right btn btn-primary' onclick='demo(2);'>Next</a><hr/>" ><i class="icon-chevron-right"></i> Social and Cultural</a>
 
                         </li>
                         <li><a href="#sports"><i class="icon-chevron-right"></i> Sports</a>
@@ -51,41 +51,144 @@
 
         <section id="soc-cult"><br/><br/>
 	<h3>Social and Cultural General Championship</h3>
-	<div class="row">
 
-            <div class="span8" id='soc-cult-content'><hr/><h4 id="demo2" title="The Timeline view" data-html="true" data-placement="left" data-content="Click on each event date to see the standings and report on the Inter-hall event. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(3);'>Next</a><hr/>">Timeline</h4></div>
-
-	<div class="span4 standings">
-		<h4 id="demo3" title="GC Standings" data-html="true" data-placement="right" data-content="Pretty self-explanatory. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(4);'>Next</a><hr/>">Final Standings</h4>
-		<div class="progress progress-success"><div class="bar" style="width: 80%">RK</div>&nbsp <span class="label label-success">780</span>
-		</div>
-		<div class="progress progress-warning"><div class="bar" style="width: 65%">Azad</div>&nbsp <span class="label label-warning">550</span>
-		</div>
-		<div class="progress progress-danger"><div class="bar" style="width: 40%">Nehru</div>&nbsp <span class="label label-important">480</span>
-		</div>
-		
-	<h4>Category Cups</h4>
-		<div class="progress progress-info"><div class="bar" style="width: 40%">RK</div>&nbsp <span class="label label-info">Literary Cup</span>
-		</div>
-		<div class="progress progress-info"><div class="bar" style="width: 40%">RK</div>&nbsp <span class="label label-info">Fine Arts Cup</span>
-		</div>
-		<div class="progress progress-info"><div class="bar" style="width: 40%">RK</div>&nbsp <span class="label label-info">Entertainment Cup</span>
-		</div>
-		<div class="progress progress-info"><div class="bar" style="width: 40%">Nehru</div>&nbsp <span class="label label-info">Dramatics Cup</span>
-		</div>
-		
+<div class="tabbable tabs-left">	
+	<ul class="nav nav-pills nav-tabs">
+		<li class="nav-header">
+			Events data
+		</li>
+		<li class="active">
+			<a href="#soc-cult-tab1" data-toggle="tab">Events timeline</a>
+		</li>
+		<li>
+			<a href="#soc-cult-tab2" data-toggle="tab">GC Progress tracker</a>
+		</li>
+		<li class="nav-header">
+			Winners data
+		</li>
+		<li>
+			<a href="#soc-cult-tab3" data-toggle="tab">Report</a>
+		</li>
+		<li>
+			<a href="#soc-cult-tab4" data-toggle="tab">Gymkhana Awardees</a>
+		</li>
+		<li>
 			<!-- Button to trigger modal -->
 	<a href="#myModal" role="button" class="btn" data-toggle="modal">Comment</a>
+		</li>
+	</ul>
+		<div class="tab-content">
+			<div class="tab-pane active" style="height: 400px; overflow: auto;" id="soc-cult-tab1">
+        <div class="" id='soc-cult-content'>
+        	<h4 id="demo2" title="The Timeline view" data-html="true" data-placement="left" data-content="Click on each event date to see the standings and report on the Inter-hall event. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(3);'>Next</a><hr/>">Timeline</h4>
+      	</div>
+      	
+      	<hr/>
+      	
+				<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
+	
+			</div>
+			<div class="tab-pane" style="height: 400px; overflow: auto;" id="soc-cult-tab2">
+				<h4 id="demo4" title="Ranking progress chart" data-html="true" data-placement="left" data-content="You can track your hall's relative performance in the GC with our chart here. <br/><a href='#header' role='button' class='pull-right btn btn-primary' onclick='demo(5);'>Next</a><hr/>">Hall ranking timeline</h4>
+
+				<div id="soc-cult-visualization" style="width: 500px; height: 400px;"></div>
+				
+			</div>
+			<div class="tab-pane" style="height: 400px; overflow: auto;" id="soc-cult-tab3">
+				<p>
+				Consistent performance throughout the year meant RK defended the General Championship Social and Cultural this year keeping out Azad, who put up a spirited fight in the Spring semester to make the championship engaging. The Scholars' Avenue looks back at the year gone by and reviews a few events and individual efforts that stood out and brought precious GC points for their Hall, or in some cases, were simply a treat to the audience.
+
+Literary Cup, Winner: RK
+An RK stronghold for several years now, virtuoso performances by Kaustubh Khare in English Elocution and Debate gave the hall an early lead. The clincher, however, was a surprise second-place finish in the General Quiz where they managed to nudge past Nehru after a six-question tie-breaker. The decider? Main ingredient of Lynchburg Lemonade: Jack Daniel’s Whisky.
+ 
+Good ones:
+Debate: This edition of Inter-Hall Debate saw quality participation and engaging arguments unlike previous years where rhetoric was passed off as Debate and was also encouraged. RK bagged top honors, while Azad and SN completed the podium.
+
+Duds:
+WTGW: RK and SN silently worked their way to Gold and Silver respectively as Nehru failed to break their jinx, winning Bronze for the fourth year in a row. Changes in the rules of the game minutes before and also during the event marred this year’s competition. Also, the present set of rules gives more weight to Single Word rounds as compared to Rapid Fire rounds whereas the level of difficulty is the same giving an undue advantage to people who do well in the former.
+
+Entertainment Cup, Winner: RK
+The Ent Cup had its fair share of controversies with LLR missing out on a podium finish in Western Groups and RK finishing in the bottom half of the table in Eastern Groups, however, some performances were not short of mesmerizing.
+
+Good ones:
+Western Groups: The venue of this year’s groups, TOAT, was well received by the audience. RK won Gold, followed by NH and PH.
+
+Western Instrumentals: RK sealed the GC by winning Gold in this all-important event. Kaushik’s rendition of Kashmir brought the entire Bhatnagar Auditorium on its feet . MS won Silver thanks to a brilliant performance on classical guitar by Souvik Bagchi. Azad completed the top three.
+ 
+Duds:
+Eastern Groups: The judgment of Eastern Groups was questionable as all halls scored in 40s apart from AZ and PH, who were in 70s. 
+
+Dramatics Cup, Winner: NH
+
+Good ones:
+English Dramatics: The final and event of the GC saw NH win Gold as well as the Dramatics Cup, staging the Broadway Musical-” The Book of Mormons”. It was in a spectacle--the likes of which KGP has rarely seen in the past few years. AZ won Silver (Romeo and Juliet) while SN finished third (Rumours-A farce).  Despite being disqualified from the event, PH were cheered on by the audience when they put up Anuvab Pal's 'The President Is Coming'.
+
+Choreography: In what they consider as their stronghold, NH’s outstanding effort: ‘Save the Tiger’ drew a standing ovation from everyone present in Netaji. RK finished a close 2nd. 
+
+DumbC: Nehru bettered their previous year’s performance finishing at a record -24s much to the amazement of the other participants. Azad squandered their lead over SN to finish 3rd.  
+
+Controversial:
+Bong Drams: This year will be remembered for Patel’s spoof on this year’s GSecs Soc-Cult in Hindi! They weren’t disqualified as the rule book doesn’t specify the medium of communication. Laughable, you say?
+ 
+Fine Arts, Winner: RK
+
+Sketching: Gopinath Soren won a well-deserved individual Gold by coming up with a masterpiece. PH, though, finished second to Azad in the overall performance while RK snapped up the bronze.
+
+
+Clay and Thermocol modeling: The final event of the Fine Arts Cup concluded with RK getting Gold and the Cup, and a tie between SN and LLR for the Silver position. 
+
+Collaging: Azad ended up getting disqualified for getting materials after the stipulated time. This did not deter them as they strived to put up a nice show. RP struck Gold as LLR and SN rounded up the podium.
+				</p>
+			</div>
+			<div class="tab-pane" style="height: 400px; overflow: auto;" id="soc-cult-tab4">
+				<p>I'm sexy and I kfnow it'</p>
+			</div>						
+		</div>
+</div>
+
+<hr/>
+
+	<div class="row">
+
+	<div class="span5 standings">
+			<h4 id="demo3" title="GC Standings" data-html="true" data-placement="right" data-content="Pretty self-explanatory. <br/><a role='button' class='pull-right btn btn-primary' onclick='demo(4);'>Next</a><hr/>">Final Standings</h4>
+	<div id="soc-cult-gauge"></div>
+	</div>
+		<div class="span7 standings">
+	<h4>Category Cups</h4>
+	<br/>
+	<ul class="thumbnails">
+  <li>
+    <div>
+      <img src="img/trophy.png" alt="">
+      <b>RK Hall</b>
+      <p>Literary Cup</p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <img src="img/trophy.png" alt="">
+      <b>RK Hall</b>
+      <p>Fine Arts Cup</p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <img src="img/trophy.png" alt="">
+      <b>RK Hall</b>
+      <p>Entertainment Cup</p>
+    </div>
+  </li>
+  <li>
+    <div>
+      <img src="img/trophy.png" alt="">
+      <b>Nehru Hall</b>
+      <p>Dramatics Cup</p>
+    </div>
+  </li>
+</ul>
 		
 	</div>
-
-	<p><h5>LEGEND</h5><span class="label label-info">GC event</span> <span class="label label-inverse">Milestone - Cup secured</span> <span class="label label-success">GC winning/sealing event</span></p>
-	<hr/>
-
-<h4 id="demo4" title="Ranking progress chart" data-html="true" data-placement="left" data-content="You can track your hall's relative performance in the GC with our chart here. <br/><a href='#header' role='button' class='pull-right btn btn-primary' onclick='demo(5);'>Next</a><hr/>">Hall ranking timeline</h4>
-
-    <div id="soc-cult-visualization" style="width: 500px; height: 400px;"></div>
-
         </section>
 
         <section id="sports"><br/><br/>
@@ -95,10 +198,11 @@
             <div class="span8" id='sports-content'><hr/><h4>Timeline</h4></div>
 
 	<div class="span4 standings">
+<div id="sports-gauge" style="width: 300px; height: 300px;"></div>
 		<h4>Final Standings</h4>
 		<div class="progress progress-success"><div class="bar" style="width: 80%">Patel</div>&nbsp <span class="label label-success">74</span>
 		</div>
-		<div class="progress progress-warning"><div class="bar" style="width: 65%">Nehru</div>&nbsp <span class="label label-warning">68</span>
+		<div class="progress progress-warning"><div class="bar" style="width: 65%">Nehru</div>&nbsp <span class="label label-warning">61</span>
 		</div>
 		<div class="progress progress-danger"><div class="bar" style="width: 40%">RK</div>&nbsp <span class="label label-important">45</span>
 		</div>
@@ -124,6 +228,7 @@
             <div class="span8" id='tech-content'><hr/><h4>Timeline</h4></div>
 
 	<div class="span4 standings">
+	<div id="tech-gauge" style="width: 300px; height: 300px;"></div>
 		<h4>Final Standings</h4>
 		<div class="progress progress-success"><div class="bar" style="width: 80%">Nehru</div>&nbsp <span class="label label-success">400</span>
 		</div>
@@ -171,18 +276,8 @@
 	</div>
 
 
-
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'gcreplay'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
+        <script src="js/disqus.js"></script>
+      
     <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
@@ -264,7 +359,60 @@
 
 	<script>
 
-google.load('visualization', '1', {packages: ['corechart']});
+google.load('visualization', '1', {packages: ['corechart', 'gauge']});
+
+    var gauge;
+    var gaugeData;
+    var gaugeOptions;
+    function drawGauge() {
+      gaugeOptions = {
+          min: 0,
+          max: 1685,
+          yellowFrom: 550,
+          yellowTo: 800,
+          greenFrom: 800,
+          greenTo: 1685,
+          minorTicks: 5
+      };
+			gaugeData = google.visualization.arrayToDataTable([
+        ['RK', 'Azad', 'Nehru'],
+        [815, 725, 465]
+      ]);    
+      gauge = new google.visualization.Gauge(document.getElementById('soc-cult-gauge'));
+      gauge.draw(gaugeData, gaugeOptions);
+      
+      gaugeOptions = {
+          min: 0,
+          max: 150,
+          yellowFrom: 50,
+          yellowTo: 75,
+          greenFrom: 75,
+          greenTo: 150,
+          minorTicks: 5
+      };
+			gaugeData = google.visualization.arrayToDataTable([
+        ['Patel', 'Nehru', 'RK'],
+        [74, 61, 45]
+      ]);    
+      gauge = new google.visualization.Gauge(document.getElementById('sports-gauge'));
+      gauge.draw(gaugeData, gaugeOptions);
+      
+      gaugeOptions = {
+          min: 0,
+          max: 750,
+          yellowFrom: 250,
+          yellowTo: 375,
+          greenFrom: 375,
+          greenTo: 750,
+          minorTicks: 5
+      };
+			gaugeData = google.visualization.arrayToDataTable([
+        ['Nehru', 'LLR', 'RK'],
+        [400, 280, 245]
+      ]);    
+      gauge = new google.visualization.Gauge(document.getElementById('tech-gauge'));
+      gauge.draw(gaugeData, gaugeOptions);
+    }
 
 function drawVisualization() {
         // Create and populate the data table.
@@ -292,6 +440,8 @@ function drawVisualization() {
       
 
       google.setOnLoadCallback(drawVisualization);
+	    google.setOnLoadCallback(drawGauge);
+
 
 </script>
 
