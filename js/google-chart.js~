@@ -104,6 +104,7 @@ function drawVisualization() {
         hAxis: {title: 'GC Progress', textPosition: 'none', gridlines: {color: '#EEE', count: 10}}
     });
     
+    
     // Create and populate the data table.
     var data = google.visualization.arrayToDataTable([
         ['x', 'Patel', 'Nehru', 'RK', 'Azad', 'LLR', 'HJB', 'MMM', 'LBS', 'MS', 'RP', 'SN'],
