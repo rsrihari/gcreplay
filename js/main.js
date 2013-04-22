@@ -1,11 +1,15 @@
 function demo(num) {
     console.log('You clicked demo');
-    if (num != 5) {
+	/*if (num == 6) {
+		$('.hero-unit')[0].remove();
+	}*/
+    if (num != 6) {
         $('#demo' + num).popover('show');
     }
     if (num != 1) {
         $('#demo' + (num - 1)).popover('destroy');
     }
+
 }
 
 $("a[data-toggle=tooltip]")
